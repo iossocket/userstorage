@@ -23,7 +23,7 @@ public class PropertyFileUserStorageProvider implements
     protected KeycloakSession session;
     protected Properties properties;
     protected ComponentModel model;
-    protected Map<String, UserModel> loadedUsers = new HashMap();
+    protected HashMap<String, UserModel> loadedUsers = new HashMap<String, UserModel>();
 
     public PropertyFileUserStorageProvider(KeycloakSession session, Properties properties, ComponentModel model) {
         this.session = session;
@@ -90,6 +90,6 @@ public class PropertyFileUserStorageProvider implements
     }
 
     public Set<String> getDisableableCredentialTypes(RealmModel realmModel, UserModel userModel) {
-        return Collections.EMPTY_SET;
+        return Collections.emptySet();
     }
 }
