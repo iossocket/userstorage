@@ -1,6 +1,6 @@
 package com.iossocket;
 
-import org.apache.log4j.Logger;
+import org.jboss.logging.Logger;
 import org.keycloak.Config;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.models.KeycloakSession;
@@ -14,7 +14,6 @@ import java.io.InputStream;
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
-
 
 public class PropertyFileUserStorageProviderFactory implements
         UserStorageProviderFactory<PropertyFileUserStorageProvider> {
